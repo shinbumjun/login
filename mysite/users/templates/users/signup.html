@@ -1,0 +1,20 @@
+회원가입 페이지
+<br>
+
+<form action="" method="POST">
+    {% csrf_token %} 
+    <p>아이디</p>
+    <input name="username" type="text"> <!-- id -->
+    <p>비밀번호</p>
+    <input name="password" type="password"> <!-- password -->
+    <p>성</p>
+    <input name="firstname" type="text"> <!-- 성 -->
+    <p>이름</p>
+    <input name="lastname" type="text"> <!-- 이름 -->
+    <p>이메일</p>
+    <input name="email" type="text"> <!-- 이메일 -->
+    <p>학번</p>
+    <input name="student_id" type="text"> <!-- 모델의 student_id --> 
+    <input type="submit" value="회원가입"> <!-- 제출 버튼 -->
+
+</form>
